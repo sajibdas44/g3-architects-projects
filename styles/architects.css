@@ -113,14 +113,128 @@ main > section{
     gap: 24px;
 }
 
+.team-img-container img:hover{
+    transform: scale(1.3);
+    transition: 2s;
+    cursor: pointer;
+}
+
 .our-features{
     margin-left: 130px;
     max-width: 530px;
 }
 
 #Quick-list{
+    color: rgba(114, 114, 114, 1);
+    font-size: 2.8rem;
     font-weight: 500;
 }
+
+#our{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+#feature{
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.feature-discription{
+    color: rgba(114, 114, 114, 1);
+     
+}
+
+/* feature  */
+.features{
+    gap: 140px;
+}
+#feature-border{
+    border-left: 5px solid #FF900E;
+    padding: 20px;
+}
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.feature-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.07);
+}
+.badge{
+    background-color: #FF900E;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 40px 30px;
+    margin-left: -100px;
+    margin-top: -100px;
+    cursor: pointer;
+}
+.badge:hover{
+    background-color: white;
+    color: #FF900E;
+    border: 3px solid #FF900E;
+    transform: rotate(30deg) scale(1.2);
+    transition: 2s;
+}
+#badge-year{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+#experience{
+    font-size: 1.5rem;
+}
+
+
+/* Some facts */
+.section-title{
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-bottom: 24px;
+}
+.section-discription{
+    color: #727272;
+    line-height: 26px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 50px;
+    justify-items: center;
+    
+}
+.card{
+    text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.card:hover{
+    background-color: #f1d9244e;
+    transform: scale(1.3);
+    transition:2s;
+}
+.card-number{
+    font-weight: 600;
+    font-size: 2.8rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.card-discription{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
 
 
 
@@ -131,14 +245,45 @@ main > section{
     .teams{
         flex-direction: column;
     }
-    .team-img-container{
+    .team-img-container .card-container{
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .our-features{
-        margin-left: 20px;
+    .team-img-container img:hover{
+        transform: scale(1.13);
     }
-    
+
+    .our-features{
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+
+     .some-facts{
+        text-align: center;
+        margin-top: 0;
+    }
+    .card-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
+        justify-items: center;
+    }
+
+     .feature-image img{
+        width: 100%;
+    }
+    .badge{
+        margin-top: 20px;
+        margin-left: 12%;
+    }
+    .badge:hover{
+        transform: scale(1.2);
+    }
+
+    .card:hover{
+        transform: scale(1.2);
+        transition:1.5s;
+    }
+
 }
 
 /* Responsive Medium Device */
@@ -151,4 +296,37 @@ main > section{
     .our-features{
         margin: 50px auto;
     }
+
+     .card-container{
+        justify-items: center;
+        gap: 24px;
+    }
+    .some-facts{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    
+    .features{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .feature-image img{
+        width: 100%;
+        margin-top: -50px;
+        
+    }
+    .badge{
+        margin-top: -50%;
+        margin-left: 10%;
+    }
+    .badge:hover{
+        transform: scale(1.1);
+    }
+
+    .card:hover{
+        transform: scale(1.2);
+        transition:1.5s;
+    }
+    
 }   
